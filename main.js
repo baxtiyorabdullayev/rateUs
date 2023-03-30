@@ -27,6 +27,7 @@ point.max = 100;
 function change() {
   let num = +point.value * 5;
   rateBlock.style.width = `${num}px`;
+  text.textContent = `You rated 100/${num / 5}`;
 }
 point.addEventListener("change", change);
 
